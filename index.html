@@ -1,14 +1,216 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
-    <script type="module" crossorigin src="/assets/index-WpnUAFyi.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-4sK4E3Wk.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <title>Aarvensa Global Exports – Stationery</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 40px;
+      background: #e5e5e5;
+      font-family: "Segoe UI", Arial, sans-serif;
+      color: #333;
+    }
+
+    h2 {
+      margin: 40px 0 15px;
+      color: #0b5d3b;
+    }
+
+    /* ---------- COMMON ---------- */
+    .card, .letter, .envelope {
+      background: #fff;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+      border-radius: 4px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .logo {
+      font-weight: 700;
+      font-size: 26px;
+      color: #0b5d3b;
+    }
+
+    .logo span {
+      display: block;
+      font-size: 14px;
+      color: #1b75bc;
+      letter-spacing: 0.5px;
+    }
+
+    .tagline {
+      font-size: 11px;
+      color: #c59a2d;
+      margin-top: 4px;
+    }
+
+    .wave {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 70px;
+      background: linear-gradient(90deg, #0b5d3b, #1b75bc);
+      clip-path: ellipse(120% 100% at 50% 100%);
+    }
+
+    /* ---------- LETTERHEAD ---------- */
+    .letter {
+      width: 800px;
+      height: 1050px;
+      margin: auto;
+      padding: 50px 60px 120px;
+    }
+
+    .letter-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 50px;
+    }
+
+    .place-date {
+      font-size: 13px;
+      color: #555;
+    }
+
+    .letter p {
+      line-height: 1.7;
+      font-size: 15px;
+      margin-bottom: 20px;
+    }
+
+    .letter-footer {
+      position: absolute;
+      bottom: 35px;
+      left: 60px;
+      right: 60px;
+      font-size: 12px;
+      color: #444;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* ---------- BUSINESS CARD ---------- */
+    .card {
+      width: 420px;
+      height: 220px;
+      padding: 25px 30px;
+    }
+
+    .card h3 {
+      margin: 25px 0 4px;
+      color: #0b5d3b;
+    }
+
+    .card .role {
+      color: #c59a2d;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    .contact {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    /* ---------- ENVELOPE ---------- */
+    .envelope {
+      width: 420px;
+      height: 220px;
+      background: linear-gradient(135deg, #0b5d3b, #1e7f5c);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .envelope .logo {
+      color: #fff;
+    }
+
+    .envelope span {
+      color: #e6e6e6;
+    }
+
+    /* ---------- GRID ---------- */
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      margin-top: 40px;
+      justify-items: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Letterhead</h2>
+  <div class="letter">
+    <div class="letter-header">
+      <div>
+        <div class="logo">AARVENSA <span>GLOBAL EXPORTS</span></div>
+        <div class="tagline">A Division of Aarvensa Pharmachem LLP</div>
+      </div>
+      <div class="place-date">Place, Date</div>
+    </div>
+
+    <p>Dear Roearsal, M-Harels.</p>
+
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+    <div class="letter-footer">
+      <div>
+        📞 +91-22-12345678 &nbsp; | &nbsp; 📱 +91-98765-43210 &nbsp; | &nbsp; 🌐 www.aarvensa.com
+      </div>
+      <div>
+        Registered Office: 123, Business Tower, MG Road, Andheri (E), Mumbai – 400001
+      </div>
+    </div>
+
+    <div class="wave"></div>
+  </div>
+
+  <h2>Business Card & Envelope</h2>
+  <div class="grid">
+    <div class="card">
+      <div class="logo">AARVENSA <span>GLOBAL EXPORTS</span></div>
+      <div class="tagline">A Division of Aarvensa Pharmachem LLP</div>
+
+      <h3>Sukesh Agarwal</h3>
+      <div class="role">Director</div>
+
+      <div class="contact">
+        📞 +91-98765-43210<br>
+        ✉️ sukesh@aarvensa.com<br>
+        🌐 www.aarvensa.com
+      </div>
+
+      <div class="wave"></div>
+    </div>
+
+    <div class="envelope">
+      <div>
+        <div class="logo">AARVENSA <span>GLOBAL EXPORTS</span></div>
+        <div class="tagline">A Division of Aarvensa Pharmachem LLP</div>
+      </div>
+    </div>
+  </div>
+
+</body>
 </html>
